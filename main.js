@@ -9,18 +9,18 @@ let rights = 0;
 let timer = false;
 let countdown = 30;
 let regresiveTimeId = null;
-let winAudio = new Audio('./Audio/win.wav');
-let loseAudio = new Audio('./Audio/lose.wav');
-let selectAudio = new Audio('./Audio/select.wav');
-let wrongAudio = new Audio('./Audio/wrong.wav');
-let psyduckAudio = new Audio('./Audio/psyduck.mp3');
-let pikachuAudio = new Audio('./Audio/pikachu.mp3');
-let bulbasaurAudio = new Audio('./Audio/bulbasaur.mp3');
-let dittoAudio = new Audio('./Audio/ditto.mp3');
-let eeveeAudio = new Audio('./Audio/eevee.mp3');
-let jigglypuffAudio = new Audio('./Audio/jigglypuff.mp3');
-let meowthAudio = new Audio('./Audio/meowth.mp3');
-let snorlaxAudio = new Audio('./Audio/snorlax.mp3');
+let winAudio = new Audio('./AUDIO/win.wav');
+let loseAudio = new Audio('./AUDIO/lose.wav');
+let selectAudio = new Audio('./AUDIO/select.wav');
+let wrongAudio = new Audio('./AUDIO/wrong.wav');
+let psyduckAudio = new Audio('./AUDIO/psyduck.mp3');
+let pikachuAudio = new Audio('./AUDIO/pikachu.mp3');
+let bulbasaurAudio = new Audio('./AUDIO/bulbasaur.mp3');
+let dittoAudio = new Audio('./AUDIO/ditto.mp3');
+let eeveeAudio = new Audio('./AUDIO/eevee.mp3');
+let jigglypuffAudio = new Audio('./AUDIO/jigglypuff.mp3');
+let meowthAudio = new Audio('./AUDIO/meowth.mp3');
+let snorlaxAudio = new Audio('./AUDIO/snorlax.mp3');
 
 //Point a HTML
 let showMoves = document.getElementById("movements");
@@ -48,7 +48,7 @@ function timeCount(){
 function blockCards(){
     for (let i=0; i<=15; i++){
         let blockedCard = document.getElementById(i);
-        blockedCard.innerHTML = `<img src="./img/${images[i]}.png" alt="">`;
+        blockedCard.innerHTML = `<img src="./IMG/${images[i]}.png" alt="">`;
         blockedCard.disabled = true;
     }
 }
@@ -68,7 +68,7 @@ function uncover(id){
         //Mostrar el primer numero
         card1 = document.getElementById(id);
         firstResult = images[id];
-        card1.innerHTML= `<img src="./img/${firstResult}.png" alt="">`;
+        card1.innerHTML= `<img src="./IMG/${firstResult}.png" alt="">`;
         //Deshabilitar el boton presionado
         card1.disabled = true;
         selectAudio.play();
@@ -77,7 +77,7 @@ function uncover(id){
         //Mostrar segundo numero
         card2 = document.getElementById(id);
         secondResult = images[id];
-        card2.innerHTML=`<img src="./img/${secondResult}.png" alt="">`;
+        card2.innerHTML=`<img src="./IMG/${secondResult}.png" alt="">`;
         //Deshabilitar el segundo boton
         card2.disabled = true;
         //Incrementar movimientos
