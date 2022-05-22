@@ -10,3 +10,6 @@ https://play.pokemonshowdown.com/audio/cries/
 
 FONDO
 https://wallpapersafari.com/w/gVMaD4
+
+FAVICON
+https://www.favicon.cc/?action=icon&file_id=977940
